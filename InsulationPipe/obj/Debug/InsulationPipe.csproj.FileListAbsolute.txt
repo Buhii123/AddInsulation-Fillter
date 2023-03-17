@@ -1,0 +1,16 @@
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\bin\Debug\InsulationPipe.dll
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\bin\Debug\InsulationPipe.pdb
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\InsulationPipe.csproj.AssemblyReference.cache
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\View\InsutationPipeViewMain.g.cs
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\InsulationPipe_MarkupCompile.cache
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\InsulationPipe_MarkupCompile.lref
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\View\InsutationPipeViewMain.baml
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\InsulationPipe.g.resources
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\InsulationPipe.csproj.CoreCompileInputs.cache
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\InsulationPipe.dll
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\InsulationPipe.pdb
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\bin\Debug\System.Windows.Interactivity.dll
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\bin\Debug\System.Windows.Interactivity.xml
+D:\Học Tập\Học WPF\InsulationPipe\InsulationPipe\obj\Debug\InsulationPipe.csproj.CopyComplete

@@ -1,0 +1,89 @@
+﻿<Window x:Class="InsulationPipe.View.InsutationPipeViewMain"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:InsulationPipe.View"
+             mc:Ignorable="d" Height="235" Width="270"
+        MinWidth="235" MinHeight="270"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        Title="Set Insulation Pipe">
+    <DockPanel LastChildFill="True">
+        <DockPanel LastChildFill="False" DockPanel.Dock="Bottom">
+            <StackPanel DockPanel.Dock="Left" Orientation="Horizontal">
+                <Button Margin="2" Width="100"  Content="Ok" x:Name="btnOK" Command="{Binding OKCommand}"/>
+            </StackPanel>
+
+            <StackPanel  Orientation="Horizontal" DockPanel.Dock="Right">
+                <Button Margin="2" Width="100"  Content="Cancel" Command="{Binding CancelCommand}"/>
+            </StackPanel>
+        </DockPanel>
+        <Grid >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="19*"/>
+                <ColumnDefinition Width="27*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Label HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" 
+                   Content="System Type" Height="26" Width="75"/>
+            <ComboBox Margin="3,14,3,15" 
+                      Grid.Column="1"
+                      ItemsSource="{Binding DataSystems}"
+                      SelectedIndex="0"
+                      x:Name="cbbSystemType">
+
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="SelectionChanged">
+                        <i:InvokeCommandAction Command="{Binding SelectionChangedCommand}"/>
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid Height="25" VerticalAlignment="Bottom">
+                            <TextBlock VerticalAlignment="Bottom" FontSize="14" Text="{Binding}"/>
+                        </Grid>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <Label HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" 
+                   Content="Diameter "
+                   Grid.Row="1" Height="26" Width="84"/>
+            <ComboBox Margin="3,14,3,15" 
+                      Grid.Column="1"
+                      Grid.Row="1"
+                      x:Name="cbbDiameter"
+                      ItemsSource="{Binding Diameters, UpdateSourceTrigger=PropertyChanged}"
+                      SelectedIndex="0"/>
+
+            <Label HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" 
+                   Content="Insulation Type "
+                   Grid.Row="2" Height="26" Width="90" />
+            <ComboBox Margin="3,14,3,15" 
+                      x:Name="cbbInsutype"
+                      Grid.Column="1"
+                      Grid.Row="2"
+                      ItemsSource="{Binding insus}"
+                      SelectedIndex="0"/>
+
+            <Label HorizontalAlignment="Left" 
+                   VerticalAlignment="Center" 
+                   Content="Thickness (mm) "
+                   Grid.Row="3" Height="26" Width="94" />
+            <TextBox Grid.Row="3" 
+                     x:Name="txtBox"
+                     Margin="3,14,3,15" 
+                     Grid.Column="1" PreviewTextInput="txtBox_PreviewTextInput"></TextBox>
+        </Grid>
+    </DockPanel>
+</Window>
